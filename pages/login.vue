@@ -37,7 +37,7 @@
           />
         </n-form-item>
 
-        <n-alert v-if="error" type="error" :title="error" closable @close="error = null" class="tw-mb-4" />
+        <n-alert v-if="error" type="error" :title="error" closable class="tw-mb-4" @close="error = null" />
 
         <n-button
           type="primary"

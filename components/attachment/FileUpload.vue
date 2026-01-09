@@ -4,8 +4,8 @@
       :custom-request="handleUpload"
       :max="10"
       :show-file-list="false"
-      @change="handleChange"
       accept=".pdf,.doc,.docx,.xls,.xlsx,.jpg,.jpeg,.png"
+      @change="handleChange"
     >
       <n-upload-dragger>
         <div class="tw-py-8 tw-text-center">

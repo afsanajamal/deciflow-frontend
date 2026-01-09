@@ -172,7 +172,7 @@
 
         <!-- Action Buttons -->
         <n-space class="tw-mt-6" justify="end">
-          <n-button @click="router.back()" :disabled="loading">
+          <n-button :disabled="loading" @click="router.back()">
             {{ t('common.cancel') }}
           </n-button>
           <n-button

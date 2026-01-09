@@ -106,24 +106,24 @@
             >
               <n-input-number
                 :value="step.step"
-                @update:value="(val: number | null) => updateStepNumber(index, val)"
                 :placeholder="t('admin.step')"
                 :min="1"
                 :max="10"
                 class="tw-w-24"
+                @update:value="(val: number | null) => updateStepNumber(index, val)"
               />
               <n-select
                 :value="step.role"
-                @update:value="(val: string) => updateStepRole(index, val)"
                 :options="roleOptions"
                 :placeholder="t('admin.selectRole')"
                 class="tw-flex-1"
+                @update:value="(val: string) => updateStepRole(index, val)"
               />
               <n-button
                 type="error"
                 size="small"
-                @click="removeStep(index)"
                 :disabled="formData.approval_steps_json.length === 1"
+                @click="removeStep(index)"
               >
                 {{ t('admin.removeStep') }}
               </n-button>

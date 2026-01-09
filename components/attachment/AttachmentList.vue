@@ -38,8 +38,8 @@
           <div class="tw-flex tw-gap-2">
             <n-button
               size="small"
-              @click="handleDownload(attachment)"
               :loading="downloadingId === attachment.id"
+              @click="handleDownload(attachment)"
             >
               <template #icon>
                 <n-icon><DownloadOutline /></n-icon>
