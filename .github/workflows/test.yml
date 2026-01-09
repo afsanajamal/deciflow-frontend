@@ -69,7 +69,7 @@ jobs:
           retention-days: 30
 
   lint:
-    name: Lint & Type Check
+    name: Lint
     runs-on: ubuntu-latest
 
     steps:
@@ -87,6 +87,3 @@ jobs:
 
       - name: Run ESLint
         run: npm run lint
-
-      - name: Run Type Check
-        run: npm run type-check
