@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ant Design theme customization */
+:root {
+  --primary-color: #1890ff;
+  --success-color: #52c41a;
+  --error-color: #ff4d4f;
+  --warning-color: #faad14;
+}
+
+/* Custom utility classes for status badges */
+.status-badge-DRAFT {
+  @apply tw-bg-gray-200 tw-text-gray-700;
+}
+
+.status-badge-SUBMITTED {
+  @apply tw-bg-blue-100 tw-text-blue-700;
+}
+
+.status-badge-IN_REVIEW {
+  @apply tw-bg-yellow-100 tw-text-yellow-700;
+}
+
+.status-badge-APPROVED {
+  @apply tw-bg-green-100 tw-text-green-700;
+}
+
+.status-badge-REJECTED {
+  @apply tw-bg-red-100 tw-text-red-700;
+}
+
+.status-badge-RETURNED {
+  @apply tw-bg-orange-100 tw-text-orange-700;
+}
+
+.status-badge-CANCELLED {
+  @apply tw-bg-gray-300 tw-text-gray-600;
+}
+
+.status-badge-ARCHIVED {
+  @apply tw-bg-gray-400 tw-text-gray-800;
+}
